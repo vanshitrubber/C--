@@ -28,9 +28,7 @@ int main() {
   if (f == 1) {
     cout << "\n The elements after deleting one element are as \n";
     for (int i = 0; i < n; i++) {
-        m = (i == delr) ? m - 1 : m;
-        cout << m;
-      for (int j = 0; j < m; j++)
+      for (int j = 0; j < ((i == delr) ? m - 1 : m); j++)
         cout << a[i][j] << "\t";
       cout << "\n";
     }
